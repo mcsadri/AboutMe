@@ -71,3 +71,8 @@ function getInput(question){
     getInput(question + ' (Y/N or Yes/No)');
   }
 }
+
+// display user's name on webpage greeting
+function getGreeting(){
+  document.write('<p>Hi, ' + userName + '!</p>');
+}
