@@ -2,7 +2,7 @@
 
 // get user's name & provide greeting
 let userName = prompt('What\'s your first name?');
-console.log(userName);
+//console.log(userName);
 alert('Hi, ' + userName + '! Welcome to my page. Ready for some questions?');
 
 // question 1: how old am I?
@@ -12,7 +12,7 @@ if (a1 === 'y' || a1 === 'yes'){
   //console.log('That\'s right! I\'m 48 years old.');
   alert('That\'s right! I\'m 48 years old.');
 } else {
-  console.log('Aren\'t you sweet.');
+  //console.log('Aren\'t you sweet.');
   alert('Aren\'t you sweet.');
 }
 
