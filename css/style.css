@@ -42,17 +42,18 @@ main{
     margin: 30px auto;
 }
 
-/* section{
-    column-count: 1;
-    break-after:column;
-    column-gap: 40px;
-} */
-
 section
 {
     column-count: 2;
-    break-after: column;
     padding-bottom: 20px;
+}
+
+div{
+    break-after:column;
+}
+
+main img{
+    height: 175px;
 }
 
 h4{
@@ -62,12 +63,14 @@ h4{
     margin-top: 0px;
 }
 
-/* ul{
+ul{
+    padding-top: 0px;
+    margin-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 0px;
-} */
+}
 
-ul{
+ol{
     padding-top: 0px;
     margin-top: 0px;
     padding-bottom: 0px;
