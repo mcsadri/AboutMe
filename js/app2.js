@@ -2,8 +2,7 @@
 
 // let count = 0;
 
-// // array and for loop for handling the original Code 201 Lab 02 AboutMe assignment's 5 yes/no questions
-
+// // refactor the original Code 201 Lab 02 AboutMe assignment's 5 yes/no questions using loops and arrays
 // //declare multidimensional array where each nested array has three string values. Array questions will be used in the following for loop
 // let questions = [
 //     ['Am I over 40 years old?', 'y', 'yes'],
@@ -12,7 +11,6 @@
 //     ['Do you like ice cream?', 'y', 'yes'],
 //     ['This really is death by a thousand pop-ups?', 'y', 'yes']
 // ];
-
 
 // for (let i = 0; i < (questions.length + 1); i++){
 //     let answer = '';
@@ -35,7 +33,7 @@
 // alert('You answered ' + count + ' questions correctly.');
 
 
-// Code 201 Lab 03 requirement #2 (aka question #6, the number guessing game)
+// Code 201 Lab 03 user story #2 (aka question #6, the number guessing game)
 // set a random whole number (1-10) value (taken from www.w3schools.com/js/js_random.asp)
 let target = Math.floor(Math.random() * 11);
 //console.log('target = ' + target);
@@ -59,3 +57,9 @@ for (let i = 0; i < 4; i++){
     }
 }
 
+
+// Code 201 Lab 03 user story #3 (aka question #6, guessing game using an array to hold multiple possible correct answers)
+
+
+
+// Code 201 Lab 03 user story #4 (provide user with their guessing game score)
