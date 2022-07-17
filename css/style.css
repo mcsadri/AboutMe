@@ -42,6 +42,38 @@ main{
     margin: 30px auto;
 }
 
+/* section{
+    column-count: 1;
+    break-after:column;
+    column-gap: 40px;
+} */
+
+section
+{
+    column-count: 2;
+    break-after: column;
+    padding-bottom: 20px;
+}
+
+h4{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+/* ul{
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+} */
+
+ul{
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
 footer{
     text-align: center;
     background-color: #9CF79C;
