@@ -46,7 +46,7 @@ for (let i = 0; i < 4; i++){
     // eslint-disable-next-line
     if (userGuess1 == target){
         alert('Wow, great guess!');
-        count++;  // increment correct guesses count
+        count++; // increment correct guesses count
         break;
     } else if (i === 3) {
         alert('You\'re out of guesses. The correct answer was ' + target + '.');
