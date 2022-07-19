@@ -5,11 +5,11 @@ let userName = prompt('What\'s your first name?');
 //console.log(userName);
 document.write('<h2>Hi, ' + userName + '!</h2>');
 
-// variable to count user correct guesses
+// global variable to count user's correct guesses
 let count = 0;
 
 // refactor the original Code 201 Lab 02 AboutMe assignment's 5 yes/no questions using loops and arrays
-//declare multidimensional array where each nested array has three string values. Array questions will be used in the following for loop
+// declare multidimensional array where each nested array has two string values: [question, answer]
 let questions = [
     ['Am I over 40 years old?', 'y'],
     ['Do I drive a Saab?', 'y'],
@@ -26,6 +26,7 @@ for (let i = 0; i < questions.length; i++){
         // get user input and convert to lower case
         answer = prompt(questions[i][0]).toLowerCase();
         //console.log('answer ' + i + ' = ' + answer);
+        // get substring 1st character of user's input to simplify validation (as a result any input staring with y or n will pass validation)
         answer = answer.substring(0, 1);
         //console.log('answer substring' + i + ' = ' + answer);
         // if answer equals values in index [i][1] then increment count
@@ -50,7 +51,7 @@ for (let i = 0; i < 4; i++){
     // eslint-disable-next-line
     if (userGuess1 == target){
         alert('Wow, great guess!');
-        count++; // increment correct guesses count
+        count++; // if correct guess increment correct guesses count
         break;
     } else if (i === 3) {
         alert('You\'re out of guesses. The correct answer was ' + target + '.');
