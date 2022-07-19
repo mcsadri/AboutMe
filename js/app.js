@@ -76,7 +76,7 @@ for (let i = 0; i < states.length; i++){
     }
     //console.log('i = ' + i + ' stateList = ' + stateList);
 }
-// give the user 6 changes to guess a correct answer
+// give the user 6 chances to guess a correct answer
 for (let i = 0; i < 6; i++){
     //console.log('i = ' + i);
     // prompt user for guess and convert to upper case
@@ -90,14 +90,12 @@ for (let i = 0; i < 6; i++){
         }
     }
     if (found === true){
-        alert('Wow, great guess!\nThe full list of correct answers is: ' + stateList + '.');
+        alert('Wow, great guess! \nThe full list of correct answers is: ' + stateList + '.');
         count++; // increment correct guesses count
         break;
-    }
-    else if (i === 5){
+    } else if (i === 5){
         alert('You\'re out of guesses. \nThe list of correct answers is: ' + stateList + '.');
-    }
-    else {
+    } else {
         alert('That\'s incorrect. You have ' + (5 - i) + ' guesses remaining.');
     }
 }
