@@ -9,11 +9,11 @@ function getName(){
 getName();
 
 // global variable to count user's correct guesses
-// let count = 0;
+let count = 0;
 
 // refactor the original Code 201 Lab 02 AboutMe assignment's 5 yes/no questions using loops and arrays
 // declare multidimensional array where each nested array has two string values: [question, answer]
-function fiveQuestions() {
+function fiveQuestions(count) {
     let questions = [
         ['Am I over 40 years old?', 'y'],
         ['Do I drive a Saab?', 'y'],
@@ -40,12 +40,13 @@ function fiveQuestions() {
             }
         }
     }
+    return count;
 }
-fiveQuestions();
+fiveQuestions(count);
 
 // Code 201 Lab 03 user story #2 (aka question #6, give the user 4 chances to guess a random number between 1-10)
 // set a random whole number (1-10) value (taken from www.w3schools.com/js/js_random.asp)
-function guessNumber(){
+function guessNumber(count){
     let target = Math.floor(Math.random() * 11);
     //console.log('target = ' + target);
     // give the user 4 guesses pick the right number
@@ -57,7 +58,7 @@ function guessNumber(){
         // eslint-disable-next-line
     if (userGuess1 == target){
             alert('Wow, great guess!');
-            // count++; // if correct guess increment correct guesses count
+            count++; // if correct guess increment correct guesses count
             break;
         } else if (i === 3) {
             alert('You\'re out of guesses. The correct answer was ' + target + '.');
@@ -69,12 +70,13 @@ function guessNumber(){
             alert('Please enter a valid number. You have ' + (3 - i) + ' guesses remaining.');
         }
     }
+    return count;
 }
-guessNumber();
+guessNumber(count);
 
 // Code 201 Lab 03 user story #3 (aka question #7, guessing game using an array to hold multiple possible correct answers)
 // decalre an array of US state abbreviations as possible correct answers for the user to guess
-function guessState() {
+function guessState(count) {
     let states = ['CO', 'KS', 'MO', 'WA'];
     // read states array elements into a single string for use later in user alerts
     let stateList = '';
@@ -100,7 +102,7 @@ function guessState() {
         }
         if (found === true){
             alert('Wow, great guess! \nThe full list of correct answers is: ' + stateList + '.');
-            // count++; // increment correct guesses count
+            count++; // increment correct guesses count
             break;
         } else if (i === 5){
             alert('You\'re out of guesses. \nThe list of correct answers is: ' + stateList + '.');
@@ -108,7 +110,8 @@ function guessState() {
             alert('That\'s incorrect. You have ' + (5 - i) + ' guesses remaining.');
         }
     }
+    return count;
 }
-guessState();
+guessState(count);
 // Code 201 Lab 03 user story #4 (provide user with their guessing game score)
-// alert( userName + ', you guessed ' + count + ' of 7 questions correctly.');
+alert('you guessed ' + count + ' of 7 questions correctly.');
